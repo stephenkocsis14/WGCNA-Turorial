@@ -1,0 +1,37 @@
+# installing prerequisites
+
+install.packages(c("matrixStats", "Hmisc", "splines", "foreach", "doParallel", "fastcluster", "dynamicTreeCut", "survival", "BiocManager")
+BiocManager::install(c("GO.db", "preprocessCore", "impute"));
+
+# the below code is for if you have an older version of R
+
+# source("http://bioconductor.org/biocLite.R")
+# biocLite(c("GO.db", "preprocessCore", "impute"))
+
+# if you plan on using annotation capabilities (such as GOenrichmentAnalysis), then install the Bioconductor annotation packages
+
+orgCodes = c("Hs", "Mm", "Rn", "Pf", "Sc", "Dm", "Bt", "Ce", "Cf", "Dr", "Gg");
+orgExtensions = c(rep(".eg", 4), ".sgd", rep(".eg", 6));
+packageNames = paste("org.", orgCodes, orgExtensions, ".db", sep="");
+
+BiocManager::install(c("GO.db", "KEGG.db", "topGO", packageNames, "hgu133a.db", "hgu95av2.db", "annotate", "hgu133plus2.db", "SNPlocs.Hsapiens.dbSNP.20100427", "minet", "OrderedList"))
+
+# install with CRAN
+
+install.packages("WGCNA")
+
+# install with bioconductor 
+
+install.packages("BiocManager") 
+BiocManager::install("WGCNA")
+
+# install with GitHub
+
+install.packages("devtools")
+library(devtools)
+install_github("cran/WGCNA")
+
+# install with linux
+
+$ wget https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/Rpackages/WGCNA/WGCNA_1.69-81.tar.gz
+$ R CMD INSTALL WGCNA_1.69-81.tar.gz
