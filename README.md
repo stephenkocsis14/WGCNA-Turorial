@@ -34,3 +34,11 @@ II. Consensus analysis of expression data
 III. Analysis of simulated data
 
 IV. Meta-analysis of several data sets
+
+Citation:
+
+Langfelder P and Horvath S, WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics
+  2008, 9:559 doi:10.1186/1471-2105-9-559
+
+  Peter Langfelder, Steve Horvath (2012). Fast R Functions for Robust Correlations and Hierarchical Clustering.
+  Journal of Statistical Software, 46(11), 1-17. URL http://www.jstatsoft.org/v46/i11/.
