@@ -35,7 +35,7 @@ III. Analysis of simulated data
 
 IV. Meta-analysis of several data sets
 
-Citation:
+# Citation
 
 Langfelder P and Horvath S, WGCNA: an R package for weighted correlation network analysis. BMC Bioinformatics
   2008, 9:559 doi:10.1186/1471-2105-9-559
